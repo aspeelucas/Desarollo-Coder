@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Epale Cafeteria</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="contenedorGridContacto">
+    <header class="navGrid">
+        <nav>
+            <a href="../index.html">
+                <img src="../imagenes/Logos/epale200trans-whiite.png" class="tamanoLogo" alt="Logo de epale cafe" />
+            </a>
+            <ul>
+                <li><a href="./menu.html">Menú</a></li>
+                <li><a href="./conocenos.html">Conocenos</a></li>
+                <li><a href="./tutoriales.html">Tutoriales</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contactoGrid">
+        <div class="tituloContacto">
+            <h2 class="textoWhite fontCaveat tamanoTituloConta">Conctacto</h2>
+        </div>
+        <section class="flexSection">
+            <form action="envio.php" class="flexForm">
+                <div class="infoPerso">
+                    <legend class="textoWhite tamanoTextoForm ">Informacion personal</legend>
+                    <label for="name" class="textoWhite tamanoTextoForm tamanoLetraChica">Nombre y Apellido</label>
+                    <input type="text" id="name" placeholder="Pepito Perez" />
+                    <label for="email" class="textoWhite tamanoTextoForm tamanoLetraChica">Correo Electronico</label>
+                    <input type="email" id="email" placeholder="pepito@gmail.com" />
+                </div>
+                <div class="infoProdu">
+                    <legend class="textoWhite tamanoTextoForm">¿Conoces nuestro productos?</legend>
+                    <div><label for="si" class="textoWhite tamanoLetraChica">Si conozco</label>
+                        <input type="radio" id="si" name="si" value="si" />
+                    </div>
+                    <div>
+                        <label for="no" class="textoWhite tamanoLetraChica">No conozco</label>
+                        <input type="radio" id="no" name="si" value="no" />
+                    </div>
+                </div>
+                <div class="infoProvi">
+                    <legend class="textoWhite tamanoTextoForm ">Elige tu Provincia</legend>
+                    <label for="Provincia" class="textoWhite tamanoTextoForm tamanoLetraChica">Provincia</label>
+                    <select name="Provincia" id="Provincia">
+                        <option value="bsas">Buenos Aires</option>
+                        <option value="larioja">La Rioja</option>
+                        <option value="cordoba">Cordoba</option>
+                        <option value="mendoza">Mendoza</option>
+                        <option value="rosario">Rosario</option>
+                    </select>
+                </div>
+                <div class="infoDescrip">
+                    <legend class="textoWhite tamanoTextoForm">Breve descripcion del motivo de contacto
+                    </legend>
+                    <label for="mensaje" class="textoWhite tamanoLetraChica">Mensaje</label>
+                    <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
+                </div>
+                <div class="infoEnvio">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Cancelar">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footerGrid">
+        <div class="cajitaRedes">
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="../imagenes/Logo-Redes/ig-circle.png" alt="logo instagram" class="espacioInstagram">
+            </a>
+            <a href="https://es-la.facebook.com/" target="_blank" class="espacioFacebook">
+                <img src="../imagenes/Logo-Redes/fb-circle.png" alt="logo facebook">
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <img src="../imagenes/Logo-Redes/tw-circle.png" alt="logo twitter">
+            </a>
+        </div>
+        <div class="cajitaRegistro">
+            <p class="textoRegistro fontRoboto textoWhite">Registrate y conoce nuestras novedades</p>
+            <form action="envio.php" class="formFlex">
+                <label for="emailfooter" class="textoRegistro fontRoboto textoWhite">Correo Electronico</label>
+                <input type="email" name="correoElectronico" id="emailfooter" placeholder="pepito@gmail.com" />
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        <div class="cajitaUbi">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d55597.32521462258!2d-66.83510496831056!3d-29.43368206104167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1653516196835!5m2!1ses-419!2sar"
+                width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="mapitaNone"></iframe>
+            <p class="textoUbicacion fontRoboto textoWhite">Direccion : lorem 444 Provincia: lorem Cp:1111
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
