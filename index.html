@@ -1,79 +1,232 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Epale Cafeteria</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <title>Epale Cooffe</title>
 </head>
 
-<body class="contenedorGrid">
-    <header class="navGrid">
-        <nav>
-            <a href="index.html">
-                <img src="imagenes/Logos/epale200trans-whiite.png" class="tamanoLogo" alt="Logo de epale cafe" />
-            </a>
-            <ul>
-                <li><a class="sub" href="views/menu.html">Menú</a></li>
-                <li><a class="sub" href="views/conocenos.html">Conocenos</a></li>
-                <li><a class="sub" href="views/tutoriales.html">Tutoriales</a></li>
-                <li><a class="sub" href="views/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="mainGrid">
-        <section class="tamanoArt textoWhite">
-            <h1 class="letraGrande fontCaveat">El cafe de tus sentidos</h1>
-            <p class="letraMediana fontCaveat">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
-                quam perspiciatis cumque vitae, ipsam ullam maxime fugiat nostrum
-                neque minima a pariatur? Labore, neque odio nemo animi tenetur porro
-                corporis!
-            </p>
-        </section>
-    </main>
-    <aside class="destacadoGrid">
-        <h5 class="tituloDestacado textoWhite fontCaveat letraGrande">Destacados</h5>
-        <div class="destacadoFlex">
-            <div><a href="./views/menu.html"><img src="./imagenes/productos/cafegrande-min.jpg" alt="Cafe Grande"
-                        class="tamanoDestacado"></a></div>
-            <div><a href="./views/menu.html"><img src="./imagenes/productos/desayunoamericano-min.jpg"
-                        alt="Desayuno Americano" class="tamanoDestacado"></a>
+<body>
+    <!-- INICIA NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark bgMarron fontSans ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="/imagenes/Logos/epale200trans-whiite.png" alt="Logo Epale"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu
+                        </a>
+                        <ul class="dropdown-menu bgMarron " aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-white " href="/views/menu.html">Latte Grande</a></li>
+                            <li><a class="dropdown-item text-white" href="/views/menu.html">Desayuno Express</a></li>
+                            <li><a class="dropdown-item text-white" href="/views/menu.html">Desayuno Americano</a></li>
+                            <li><a class="dropdown-item text-white" href="/views/menu.html">Pancake</a></li>
+                            <li><a class="dropdown-item text-white" href="/views/menu.html">Pizza a la Piedra</a></li>
+                            <li><a class="dropdown-item text-white" href="/views/menu.html">Sandwich</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/views/conocenos.html">Conocenos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/views/tutoriales.html">Tutoriales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/views/contacto.html">Contacto</a>
+                    </li>
+                </ul>
             </div>
-            <div><a href="./views/menu.html"><img src="./imagenes/productos/pancakes-min.jpg" alt="pancakes" class="tamanoDestacado"></a></div>
         </div>
-    </aside>
-    <footer class="footerGrid">
-        <div class="cajitaRedes">
-            <a class="iconoRed" href="https://www.instagram.com/" target="_blank">
-                <img src="./imagenes/Logo-Redes/ig-circle.png" alt="logo instagram" class="espacioInstagram">
-            </a>
-            <a class="iconoRed" href="https://es-la.facebook.com/" target="_blank" class="espacioFacebook">
-                <img src="./imagenes/Logo-Redes/fb-circle.png" alt="logo facebook">
-            </a>
-            <a class="iconoRed" href="https://twitter.com/" target="_blank">
-                <img src="./imagenes/Logo-Redes/tw-circle.png" alt="logo twitter">
-            </a>
+    </nav>
+    <!-- TERMINA NAV BAR -->
+    <main class="container-fluid">
+        <!-- imagen fondo -->
+        <div class="row backgroundIndex anchoIndex justify-content-center">
+            <div class="col-sm-12 col-md-6  d-flex flex-column justify-content-center">
+                <div class="bgTextoPrincipal p-3">
+                    <h1 class="text-white text-center fontCourgette">Disfruta del sabor de un buen Cafe</h1>
+                    <p class="text-white text-center fontSans">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Ipsam optio obcaecati
+                        at vero neque eveniet aut corrupti incidunt numquam, minima a id ea perferendis tempore ipsa
+                        unde
+                        itaque deserunt consequatur!</p>
+                </div>
+            </div>
         </div>
-        <div class="cajitaRegistro">
-            <p class="textoRegistro fontRoboto textoWhite">Registrate y conoce nuestras novedades</p>
-            <form action="envio.php" class="formFlex">
-                <label for="emailfooter" class="textoRegistro fontRoboto textoWhite">Correo Electronico</label>
-                <input type="email" name="correoElectronico" id="emailfooter" placeholder="pepito@gmail.com" />
-                <input type="submit" value="Enviar">
+        <!-- termina imagen fondo -->
+        <!-- inicia carrousel RECOMENDADOS -->
+        <div class="row bg-dark">
+            <div class="col-sm-12 col-md-6 col-xl-6  d-flex justify-content-center align-items-center">
+                <h4 class="text-white fontCourgette letraGrande"> DESTACADOS</h4>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide col-sm-12 col-md-6 col-xl-6 "
+                data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner alturaItem">
+                    <div class="carousel-item active ">
+                        <a href="./views/menu.html"><img src="./imagenes/productos/cafegrande-min.jpg"
+                                class="d-block w-100  " alt="cafegrande"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="./views/menu.html"><img src="./imagenes/productos/desayunoamericano-min.jpg"
+                                class="d-block w-100  " alt="desayuno-americano"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="./views/menu.html"><img src="./imagenes/productos/cafeconmasita-min.jpg"
+                                class="d-block w-100  " alt="cafegrande"></a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- FINALIZA RECOMENDADOS-->
+        <!-- INICIA PUNTUACION -->
+        <div class="row justify-content-center backGroundOpi ">
+            <h6 class="fontCourgette fs-2 text-center text-white p-2">Opiniones</h6>
+        </div>
+        <div class="row bg-dark">
+            <div id="carouselExampleControls" class="carousel slide col-12 fontSans text-white "
+                data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active ">
+                        <div class="row">
+                            <div class="col-1 colorCarru offset-2"></div>
+                            <div class="col-7  bg-dark d-flex flex-column justify-content-center">
+                                <h2 class="fs-2"> Jorgito
+                                    <span>
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill">
+                                        </i>
+                                    </span>
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, perferendis.
+                                    Enim deleniti nesciunt ducimus? Ipsa quo alias quam ullam nostrum porro adipisci
+                                    quod quidem nam facere, impedit harum sapiente obcaecati?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="row">
+                            <div class="col-1 colorCarru offset-2"></div>
+                            <div class="col-7  bg-dark d-flex flex-column justify-content-center">
+                                <h3 class="fs-2"> Camila
+                                    <span>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                    </span>
+                                </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, perferendis.
+                                    Enim deleniti nesciunt ducimus? Ipsa quo alias quam ullam nostrum porro adipisci
+                                    quod quidem nam facere, impedit harum sapiente obcaecati?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="row">
+                            <div class="col-1 colorCarru offset-2"></div>
+                            <div class="col-7  bg-dark d-flex flex-column justify-content-center">
+                                <h2 class="fs-2"> Diego
+                                    <span>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                    </span>
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, perferendis.
+                                    Enim deleniti nesciunt ducimus? Ipsa quo alias quam ullam nostrum porro adipisci
+                                    quod quidem nam facere, impedit harum sapiente obcaecati?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- termina PUNTUACION -->
+    </main>
+    <footer class="container-fluid bgMarron py-4">
+        <div class="row align-items-center">
+            <div class="col-sm-12 col-md-12 col-lg-4 fs-2 d-flex justify-content-around">
+                <a href="https://es-la.facebook.com/" class="bi bi-facebook text-white iconoRed" target="_blank"></a>
+                <a href="https://twitter.com/" class="bi bi-twitter text-white iconoRed" target="_blank"></a>
+                <a href="https://www.instagram.com/" class="bi bi-instagram text-white iconoRed" target="_blank"></a>
+            </div>
+            <form class="col-sm-12 col-md-12 col-lg-4 d-flex flex-column align-items-center">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label fontSans text-center text-white">Registrate y
+                        conoce nuestras
+                        novedades
+                        Correo Electronico</label>
+                    <input type="email" class="form-control text-center" id="exampleInputEmail1"
+                        placeholder="peptio@gmail.com" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text text-center text-white">We'll never share your email with
+                        anyone else.
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-outline-light  w-25">Enviar</button>
             </form>
-        </div>
-        <div class="cajitaUbi">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d55597.32521462258!2d-66.83510496831056!3d-29.43368206104167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1653516196835!5m2!1ses-419!2sar"
-                width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade" class="mapitaNone"></iframe>
-            <p class="textoUbicacion fontRoboto textoWhite">Direccion : lorem 444 Provincia: lorem Cp:1111
-            </p>
+            <div class="col-sm-12 col-md-12 col-lg-4 d-flex flex-column align-items-center ">
+                <iframe class="d-none d-xl-block "
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27795.263849430627!2d-66.94734634764785!3d-29.44609478947877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1656112005348!5m2!1ses-419!2sar"
+                    width="400" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <p class="text-white">Direccion : lorem 444 Provincia: lorem Cp:1111</p>
+            </div>
         </div>
     </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
