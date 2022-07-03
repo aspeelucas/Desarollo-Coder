@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Roboto+Mono&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Rubik:wght@500&display=swap");
 
 * {
   margin: 0;
@@ -18,10 +18,13 @@
   font-family: "Caveat", cursive;
 }
 .fontCourgette {
-  font-family: 'Courgette', cursive;
+  font-family: "Courgette", cursive;
 }
-.fontSans{
-  font-family: 'Open Sans', sans-serif;
+.fontRubik {
+  font-family: "Rubik", sans-serif;
+}
+.fontSans {
+  font-family: "Open Sans", sans-serif;
 }
 .letraChica {
   font-size: 5px;
@@ -32,130 +35,277 @@
 .letraGrande {
   font-size: 45px;
 }
-/* animaciones */
-.iconoRed:hover{
-  transform:scale(1.2);
-  filter:brightness(150%);
+.sombraTexto {
+  text-shadow: 0px 3px #000;
+}
+.intensidadTextGral {
+  font-weight: 700;
+}
+.intensidadMedia{
+  font-weight: 600;
+}
+/* Animaciones */
+.iconoRed:hover {
+  transform: scale(1.2);
+  filter: brightness(150%);
   transition: 0.8s;
 }
-.iconoRed{
+.iconoRed {
   transition: 0.8s;
 }
+.scale:hover {
+  transform: scale(1.02, 1.02);
+  cursor: pointer;
+  transition: transform 0.8s;
+}
+/* Boton Hamburguesa */
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible; }
+  .hamburger:hover {
+    opacity: 0.7; }
+  .hamburger.is-active:hover {
+    opacity: 0.7; }
+  .hamburger.is-active .hamburger-inner,
+  .hamburger.is-active .hamburger-inner::before,
+  .hamburger.is-active .hamburger-inner::after {
+    background-color: #fff; }
+
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative; }
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px; }
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease; }
+  .hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block; }
+  .hamburger-inner::before {
+    top: -10px; }
+  .hamburger-inner::after {
+    bottom: -10px; }
+
+
+/*
+   * Spin
+   */
+.hamburger--spin .hamburger-inner {
+ 
+  transition-duration: 0.22s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  .hamburger--spin .hamburger-inner::before {
+    transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in; }
+  .hamburger--spin .hamburger-inner::after {
+    transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+.hamburger--spin.is-active .hamburger-inner {
+  
+  transform: rotate(225deg);
+  transition-delay: 0.12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  .hamburger--spin.is-active .hamburger-inner::before {
+    top: 0;
+    opacity: 0;
+    transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out; }
+  .hamburger--spin.is-active .hamburger-inner::after {
+    bottom: 0;
+    transform: rotate(-90deg);
+    transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1); }
+/* Fin Boton Hamburguesa */
+
 /* Fin de clases generales */
-.bgMarron{
-  background-color:rgb(27, 27, 27) ;
+.bgMarron {
+  background-color: rgb(27, 27, 27);
 }
-nav div a img{ 
+nav div a img {
   width: 180px;
 }
-.backgroundIndex{
+.backgroundIndex {
   background-image: url(../imagenes/background/backgroundboddy-min.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-.anchoIndex{
+.anchoIndex {
   height: 50rem;
 }
-/* carrousel recomendacion */
-.colorCarru{
-  background-color: rgb(0, 0, 0);
-  height: 22rem;
+.blanquito {
+  color: white;
 }
-.colorCarrousel1{
-  background-color:rgba(51, 51, 50, 0.877);
+/* Carrousel recomendacion */
+.colorCarru {
+  background-color: rgb(255, 255, 255);
+  height: 19rem;
 }
-.flexCenterText{
+.colorCarrousel1 {
+  background-color: rgba(51, 51, 50, 0.877);
+}
+.flexCenterText {
   display: flex;
   align-content: center;
   flex-direction: column;
 }
-.alturaItem{
+.alturaItem {
   height: 100%;
 }
-.bgTextoPrincipal{
+.bgTextoPrincipal {
   background-color: rgba(0, 0, 0, 0.438);
   border-radius: 10px;
 }
-.backGroundOpi{
-  background-color: rgba(0, 0, 0, 0.952);
-}  
-
+.backGroundOpi {
+  background-color: rgba(255, 255, 255, 0.952);
+}
+.margenCarrusel {
+  margin-top: 40px;
+}
+.textoRecomendaciones {
+  text-align: justify;
+}
 /* CSS MENU */
-.bordesMenu{
+.bordesMenu {
   border-radius: 20px;
 }
-.intensidadTexto{
+.intensidadTexto {
   font-weight: 600;
 }
-.backgroundMenu{
-  background-image: url(../imagenes/background/background-menu-min.jpg);
+.backgroundMenu {
+  background-image: url(../imagenes/background/menu-min.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-.anchoMenu{
+.anchoMenu {
   height: 20rem;
 }
-.backTituloMenu{
+.margenMenu {
+  margin-top: 70px;
+}
+.margenArticulo {
+  margin-bottom: 90px;
+}
+.backTituloMenu {
   width: 100%;
 }
-.backgroundCatalogo{
-  background-color: rgb(238, 230, 221);
+.backgroundCatalogo {
+  background-color: rgb(255, 255, 255);
 }
-.bgCajitaProdu{
-  background-color: rgb(27, 27, 27) ;
+.bgCajitaProdu {
+  background-color: rgb(27, 27, 27);
   border-radius: 20px;
 }
+.categoriaCatalogos {
+  margin-top: 90px;
+  font-size: 60px;
+  font-weight: 500;
+  width: fit-content;
+}
+.categoriaCatalogos1 {
+  margin-bottom: 80px;
+  font-size: 60px;
+  font-weight: 500;
+  width: fit-content;
+}
 /* CSS CONOCENOS */
-.backgroundConocenos{
+.backgroundConocenos {
   background-image: url(../imagenes/background/backgroundconocenos-min.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-.tamanoImgConocenos{
-width: 100%;
+.tamanoImgConocenos {
+  width: 100%;
 }
-.backGroundConocenos{
+.backGroundConocenos {
   background-color: rgb(31, 23, 12);
 }
 /* termina Conocenos */
 /* Inicia css Contaco */
-.backgroundContacto{
-  background-image: url(../imagenes/background/backgroundContacto-min.jpg);
+
+.bgTextoPrincipalContacto {
+  background-color: rgba(0, 0, 0, 0.438);
+  border-radius: 10px;
+  width: 50%;
+}
+.backgroundContacto {
+  background-image: url(../imagenes/background/backgcontacto.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
-.altoContacto{
+.altoContacto {
   min-height: 100vh;
 }
-.fondoFormulario{
-  background-color: rgb(194, 193, 193);
+.fondoFormulario {
+  background-color: rgb(255, 255, 255);
 }
-
+.anchoEntrada {
+  width: fit-content;
+}
+.backgroundCamposContacto {
+  background-color: rgb(206, 208, 211);
+}
+.intensidadTextoCajaContacto {
+  font-weight: 600;
+}
+.anchoBarrasInput {
+  width: 300px;
+}
+.anchoBarrasProvincia {
+  width: 150px;
+}
 /* termina css Contacto */
+
 /* Inicia css Tutoriales */
-.backgroundTutoriales{
-  background-image: url(../imagenes/background/backgroundTutorial-min.jpg);
-}
-.ancholoo{
-  width: 100%;
-}
-.altoCajaTuto{
-  min-height: 100vh;
-}
-.anchoVideo{
-  width: 60rem;
-  height: 30rem;
-}
-.backGroundTutoriales{
+.backgroundTutoriales {
   background-image: url(../imagenes/background/backgroundTutorial-min.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
-.anchoMenuTutoriales{
+
+.anchoMenuTutoriales {
   height: 10rem;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
 }
-.alturaMainTutoriales{
+.alturaMainTutoriales {
   min-height: 100vh;
 }
+.textoTutoriales {
+  text-align: justify;
+  padding-right: 200px;
+}
+.backGroundTutorialesdos {
+  background-image: url(../imagenes/background/backtutodos-min.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.intensidadTutoriales {
+  font-weight: 700;
+  font-size: 60px;
+}
+/* Termina css Tutoriales */

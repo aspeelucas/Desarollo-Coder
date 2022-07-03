@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <title>Epale Cooffe</title>
+    <link rel="stylesheet" href="/css/animate.css">
+    <title>Epale Coffee</title>
 </head>
 
 <body>
@@ -19,10 +19,12 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="./index.html">
                 <img src="./imagenes/Logos/epale200trans-whiite.png" alt="Logo Epale"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="hamburger hamburger--spin d-ms-block d-md-none d-lg-none d-xl-none d-xxl-none" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -57,9 +59,10 @@
     <main class="container-fluid">
         <!-- imagen fondo -->
         <div class="row backgroundIndex anchoIndex justify-content-center">
-            <div class="col-sm-12 col-md-6  d-flex flex-column justify-content-center">
-                <div class="bgTextoPrincipal p-3">
-                    <h1 class="text-white text-center fontCourgette">Disfruta del sabor de un buen Cafe</h1>
+            <div class="col-sm-12 col-md-6  d-flex flex-column justify-content-center wow fadeInDown "
+                data-wow-delay="0.3s">
+                <div class="bgTextoPrincipal p-3 ">
+                    <h1 class="text-white text-center fontCourgette ">Disfruta del sabor de un buen Cafe</h1>
                     <p class="text-white text-center fontSans">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         Ipsam optio obcaecati
                         at vero neque eveniet aut corrupti incidunt numquam, minima a id ea perferendis tempore ipsa
@@ -70,9 +73,15 @@
         </div>
         <!-- termina imagen fondo -->
         <!-- inicia carrousel RECOMENDADOS -->
-        <div class="row bg-dark">
-            <div class="col-sm-12 col-md-6 col-xl-6  d-flex justify-content-center align-items-center">
-                <h4 class="text-white fontCourgette letraGrande"> DESTACADOS</h4>
+        <div class="row bg-white margenCarrusel">
+            <div class="col-sm-12 col-md-6 col-xl-6  d-flex justify-content-center flex-column align-items-center gap-3 wow fadeInLeft "
+                data-wow-delay="0.8s">
+                <h2 class="text-dark fontCourgette fs-1 text-center intensidadTextGral"> Nuestros Destacados</h2>
+                <p class="text-dark fontSans LetraGrande textoRecomendaciones">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit.
+                    Perspiciatis debitis alias culpa nobis
+                    fugiat voluptatum neque magnam eaque corrupti cumque! Saepe omnis numquam ratione amet cupiditate
+                </p>
             </div>
             <div id="carouselExampleIndicators" class="carousel slide col-sm-12 col-md-6 col-xl-6 "
                 data-bs-ride="carousel">
@@ -84,10 +93,10 @@
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-inner alturaItem">
+                <div class="carousel-inner alturaItem bordesMenu">
                     <div class="carousel-item active ">
                         <a href="./views/menu.html"><img src="./imagenes/productos/cafegrande-min.jpg"
-                                class="d-block w-100  " alt="cafegrande"></a>
+                                class="d-block w-100   " alt="cafegrande"></a>
                     </div>
                     <div class="carousel-item">
                         <a href="./views/menu.html"><img src="./imagenes/productos/desayunoamericano-min.jpg"
@@ -112,25 +121,25 @@
         </div>
         <!-- FINALIZA RECOMENDADOS-->
         <!-- INICIA PUNTUACION -->
-        <div class="row justify-content-center backGroundOpi ">
-            <h6 class="fontCourgette fs-2 text-center text-white p-2">Opiniones</h6>
+        <div class="row justify-content-center  backGroundOpi margenCarrusel ">
+            <h3 class="fontCourgette intensidadMedia fs-1 text-center text-dark p-2 wow fadeInRight" data-wow-delay="0.s">Reseñas</h3>
         </div>
-        <div class="row bg-dark">
-            <div id="carouselExampleControls" class="carousel slide col-12 fontSans text-white "
+        <div class="row bg-white">
+            <div id="carouselExampleControls" class="carousel slide carousel-dark col-12 fontSans text-white "
                 data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active ">
                         <div class="row">
                             <div class="col-1 colorCarru offset-2"></div>
-                            <div class="col-7  bg-dark d-flex flex-column justify-content-center">
-                                <h2 class="fs-2"> Jorgito
+                            <div class="col-7  bg-white text-dark d-flex flex-column justify-content-center">
+                                <h4 class="fs-2"> Jorgito
                                     <span>
                                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                             class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                             class="bi bi-star-fill">
                                         </i>
                                     </span>
-                                </h2>
+                                </h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, perferendis.
                                     Enim deleniti nesciunt ducimus? Ipsa quo alias quam ullam nostrum porro adipisci
                                     quod quidem nam facere, impedit harum sapiente obcaecati?</p>
@@ -140,8 +149,8 @@
                     <div class="carousel-item ">
                         <div class="row">
                             <div class="col-1 colorCarru offset-2"></div>
-                            <div class="col-7  bg-dark d-flex flex-column justify-content-center">
-                                <h3 class="fs-2"> Camila
+                            <div class="col-7  bg-white text-dark d-flex flex-column justify-content-center">
+                                <h5 class="fs-2"> Camila
                                     <span>
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-fill"></i>
@@ -149,18 +158,19 @@
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-half"></i>
                                     </span>
-                                </h3>
+                                </h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, perferendis.
                                     Enim deleniti nesciunt ducimus? Ipsa quo alias quam ullam nostrum porro adipisci
-                                    quod quidem nam facere, impedit harum sapiente obcaecati?</p>
+                                    quod quidem nam facere, impedit harum sapiente obcaecati?
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item ">
                         <div class="row">
                             <div class="col-1 colorCarru offset-2"></div>
-                            <div class="col-7  bg-dark d-flex flex-column justify-content-center">
-                                <h2 class="fs-2"> Diego
+                            <div class="col-7  bg-white text-dark d-flex flex-column justify-content-center">
+                                <h6 class="fs-2"> Diego
                                     <span>
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-half"></i>
@@ -168,7 +178,7 @@
                                         <i class="bi bi-star"></i>
                                         <i class="bi bi-star"></i>
                                     </span>
-                                </h2>
+                                </h6>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, perferendis.
                                     Enim deleniti nesciunt ducimus? Ipsa quo alias quam ullam nostrum porro adipisci
                                     quod quidem nam facere, impedit harum sapiente obcaecati?</p>
@@ -198,35 +208,46 @@
                 <a href="https://www.instagram.com/" class="bi bi-instagram text-white iconoRed" target="_blank"></a>
             </div>
             <form class="col-sm-12 col-md-12 col-lg-4 d-flex flex-column align-items-center">
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label fontSans text-center text-white">Registrate y
+                <div class="mb-3 text-center">
+                    <p class="text-white py-2 fontSans fs-4">Registrate y
                         conoce nuestras
-                        novedades
-                        Correo Electronico</label>
+                        novedades</p>
+                    <label for="exampleInputEmail1" class="form-label fontSans text-center text-white">Direccion de
+                        correo electronico
+                    </label>
                     <input type="email" class="form-control text-center" id="exampleInputEmail1"
                         placeholder="peptio@gmail.com" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text text-center text-white">We'll never share your email with
-                        anyone else.
+                    <div id="emailHelp" class="form-text text-center text-white">
                     </div>
                 </div>
-                <button type="submit" class="btn btn-outline-light  w-25">Enviar</button>
+                <button type="submit" class="btn btn-outline-light  w-25 mt-3">Enviar</button>
             </form>
             <div class="col-sm-12 col-md-12 col-lg-4 d-flex flex-column align-items-center ">
                 <iframe class="d-none d-xl-block "
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27795.263849430627!2d-66.94734634764785!3d-29.44609478947877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1656112005348!5m2!1ses-419!2sar"
-                    width="400" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
-                <p class="text-white">Direccion : lorem 444 Provincia: lorem Cp:1111</p>
+                <p class="text-white mt-3">Direccion : Castro 444 Provincia: La Rioja Cp:1111</p>
             </div>
         </div>
     </footer>
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!--bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
         </script>
+    <!--script Animaciones  -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- script boton hamburguesa -->
+    <script>
+        var hamburger = document.querySelector(".hamburger");
+        hamburger.addEventListener("click", function () {
+            hamburger.classList.toggle("is-active");
+        });
+    </script>
 </body>
 
 </html>

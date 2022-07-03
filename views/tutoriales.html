@@ -10,7 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Epale Cooffe</title>
+    <link rel="stylesheet" href="../css/animate.css">
+    <title>Epale Coffee</title>
 </head>
 
 <body>
@@ -19,10 +20,12 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">
                 <img src="../imagenes/Logos/epale200trans-whiite.png" alt="Logo Epale"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="hamburger hamburger--spin d-ms-block d-md-none d-lg-none d-xl-none d-xxl-none" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -56,36 +59,58 @@
     <!-- TERMINA NAV BAR -->
     <main class="container-fluid ">
         <!-- imagen fondo -->
-        <div class="row anchoMenuTutoriales  ">
-            <div class="col-sm-12 col-md-6  d-flex flex-column justify-content-center backTituloMenu">
-                <div class="bgTextoPrincipal  p-3">
-                    <h1 class="text-white text-center fontCourgette">Tutoriales</h1>
+        <div class="row backgroundTutoriales anchoMenu justify-content-center ">
+            <div class="col-sm-12 col-md-6  d-flex flex-column justify-content-center backTituloMenu ">
+                <div class=" p-3  ">
+                    <h1 class="text-white text-center fontCourgette sombraTexto letraGrande wow fadeInDown"
+                        data-wow-delay="0.3s">
+                        Tutoriales</h1>
                 </div>
             </div>
         </div>
         <!-- termina imagen fondo -->
         <!-- inicia Tutoriales -->
-        <div class=" row backGroundTutoriales alturaMainTutoriales">
-            <div class="row mt-5 justify-content-center">
-                <iframe class="anchoVideo" width="300" height="315" src="https://www.youtube.com/embed/P3uSnCPDmqE"
+        <div class="row my-5">
+            <div
+                class="col-sm-12 col-md-12 col-lg-6 col-xxl-5 offset-xxl-1 d-flex justify-content-xxl-end justify-content-sm-center ">
+                <iframe width="800" height="315" src="https://www.youtube.com/embed/P3uSnCPDmqE"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
+                    allowfullscreen></iframe>
             </div>
-            <div class="row my-4 justify-content-center">
-                <iframe class="anchoVideo" width="560" height="315" src="https://www.youtube.com/embed/okuMADmgoOk"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xxl-5 d-flex flex-column justify-content-center">
+                <h2 class="intensidadTextGral ">Destacado</h2>
+                <h3 class="intensidadTextGral">CUPPING:CATA de CAFE</h3>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem praesentium nobis dolorem modi
+                    assumenda alias molestias dolore facilis tempora deserunt possimus, cum vitae debitis veniam
+                    iste eveniet eaque, minus voluptates?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
+                    ut officiis praesentium iste, facere tempora repudiandae officia sit non ipsam consectetur, dolorem
+                    libero eveniet veniam. Illo ullam sed dicta ipsum.</P>
             </div>
-            <div class="row my-4 justify-content-center">
-                <iframe class="anchoVideo" width="560" height="315" src="https://www.youtube.com/embed/dUTOskpg2dk"
+        </div>
+        <div class="row backGroundTutorialesdos justify-content-center">
+            <div class="col-sm-12 col-md-6  d-flex flex-column justify-content-center " data-wow-delay="0.3s">
+                <div class="bgTextoPrincipal p-3 ">
+                    <h3 class="text-white text-center fontCourgette letraGrande p-5">El cafe ayuda a quien duerme poco y
+                        sueña mucho
+                    </h3>
+
+                </div>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div
+                class="col-sm-12 col-md-12 col-lg-6 col-xxl-5 offset-xxl-1 d-flex justify-content-xxl-end justify-content-sm-center my-3">
+                <iframe width="800" height="315" src="https://www.youtube.com/embed/P3uSnCPDmqE"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xxl-5 d-flex justify-content-center my-3">
+                <iframe width="800" height="315" src="https://www.youtube.com/embed/P3uSnCPDmqE"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
         </div>
         <!-- termina Termina tutoriales -->
@@ -98,27 +123,27 @@
                 <a href="https://www.instagram.com/" class="bi bi-instagram text-white iconoRed" target="_blank"></a>
             </div>
             <form class="col-sm-12 col-md-12 col-lg-4 d-flex flex-column align-items-center">
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label fontSans text-center text-white">Registrate y
-                        conoce
-                        nuestras
-                        novedades
-                        Correo Electronico</label>
+                <div class="mb-3 text-center">
+                    <p class="text-white py-2 fontSans fs-4">Registrate y
+                        conoce nuestras
+                        novedades</p>
+                    <label for="exampleInputEmail1" class="form-label fontSans text-center text-white">Direccion de
+                        correo electronico
+                    </label>
                     <input type="email" class="form-control text-center" id="exampleInputEmail1"
                         placeholder="peptio@gmail.com" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text text-center text-white">We'll never share your email with
-                        anyone else.
+                    <div id="emailHelp" class="form-text text-center text-white">
                     </div>
                 </div>
-                <button type="submit" class="btn btn-outline-light  w-25">Submit</button>
+                <button type="submit" class="btn btn-outline-light  w-25 mt-3">Enviar</button>
             </form>
             <div class="col-sm-12 col-md-12 col-lg-4 d-flex flex-column align-items-center ">
                 <iframe class="d-none d-xl-block "
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27795.263849430627!2d-66.94734634764785!3d-29.44609478947877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1656112005348!5m2!1ses-419!2sar"
-                    width="400" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
-                <p class="text-white">Direccion : lorem 444 Provincia: lorem Cp:1111</p>
+                <p class="text-white mt-3">Direccion : Castro 444 Provincia: La Rioja Cp:1111</p>
             </div>
         </div>
     </footer>
@@ -128,6 +153,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <!--script Animaciones  -->
+    <script src="../js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- script boton hamburguesa -->
+    <script>
+        var hamburger = document.querySelector(".hamburger");
+        hamburger.addEventListener("click", function () {
+            hamburger.classList.toggle("is-active");
+        });
+    </script>
 
 </body>
 

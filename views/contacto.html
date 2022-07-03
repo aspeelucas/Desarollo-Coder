@@ -10,7 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Epale Cooffe</title>
+    <link rel="stylesheet" href="../css/animate.css">
+    <title>Epale Coffee</title>
 </head>
 
 <body>
@@ -19,10 +20,12 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">
                 <img src="../imagenes/Logos/epale200trans-whiite.png" alt="Logo Epale"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="hamburger hamburger--spin d-ms-block d-md-none d-lg-none d-xl-none d-xxl-none" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -57,9 +60,12 @@
     <main class="container-fluid">
         <!-- imagen fondo -->
         <div class="row backgroundContacto anchoMenu  ">
-            <div class="col-sm-12 col-md-6  d-flex flex-column justify-content-center backTituloMenu">
-                <div class="bgTextoPrincipal  p-3">
-                    <h1 class="text-white text-center fontCourgette">Nuestro Contacto</h1>
+            <div
+                class="col-sm-12 col-md-6  d-flex flex-column align-items-center justify-content-center backTituloMenu">
+                <div class="bgTextoPrincipalContacto  p-3 wow fadeInDown" data-wow-delay="0.3s"">
+                    <h1 class=" text-white text-center fontCourgette sombraTexto">¿Que va mejor con una taza de cafe?
+                    Otra taza
+                    </h1>
                 </div>
             </div>
         </div>
@@ -68,58 +74,67 @@
         <div class="row altoContacto">
             <div
                 class="fondoFormulario d-flex flex-column align-items-center justify-content-center fontSans fs-4 gap-4">
-                <h1>Contacto :</h1>
-                <p class="text-center">Podes llenar el formulario para hacer sugerencias, reservas y obtener
+                <h1 class="fontRubik letraGrande intensidadTextGral">Contacto :</h1>
+                <p class="text-center fontRubik w-50">Podes llenar el formulario para hacer sugerencias, reservas y
+                    obtener
                     informacion
                     extra sobre nuestro
                     servicio y productos
                 </p>
             </div>
-            <div class=" bg-dark d-flex flex-column justify-content-center text-white fontSans">
-                <div class="my-3 anchoEntrada ">
-                    <label for="Nombre y Apellido" class="form-label">Nombre y Apellido</label>
-                    <input type="text" class="form-control" id="Nombre y Apellido" placeholder="Pepito Ozka">
-                </div>
-                <div class="mb-3 anchoEntrada">
-                    <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="name@example.com">
-                </div>
-                <div>
-                    <p>¿Conoces nuestros productos ?</p>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                            Si
-                        </label>
+            <div
+                class=" bg-white d-flex flex-column justify-content-center align-items-center intensidadTextoCajaContacto text-dark fontSans fs-5">
+                <form action="" class="anchoEntrada d-flex flex-column  align-items-center">
+                    <div class="my-3 text-center ">
+                        <label for="Nombre y Apellido" class="form-label">Nombre y Apellido</label>
+                        <input type="text" class="form-control backgroundCamposContacto anchoBarrasInput"
+                            id="Nombre y Apellido" placeholder="Pepito Ozka">
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
-                            checked>
-                        <label class="form-check-label" for="flexRadioDefault2">
-                            No
-                        </label>
+                    <div class="mb-3  text-center">
+                        <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
+                        <input type="email" class="form-control backgroundCamposContacto anchoBarrasInput"
+                            id="exampleFormControlInput1" placeholder="name@example.com" required>
                     </div>
-                </div>
-                <div>
-                    <p>
-                        Elegi tu Pronvicia
-                    </p>
-                    <select class="form-select " aria-label="Default select example">
-                        <option selected>Pronvicias</option>
-                        <option value="1">Buenos Aires</option>
-                        <option value="2">Cordoba</option>
-                        <option value="3">La Rioja</option>
-                    </select>
-                </div>
-                <div class="mb-3 ">
-                    <label for="exampleFormControlTextarea1" class="form-label my-3 ">Escribe aqui tu
-                        comentario</label>
-                    <textarea class="form-control " id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <div class="d-flex justify-content-center mb-3 mt-4">
-                    <button type="submit" class="btn btn-outline-light  w-25 justify-content-center">Enviar</button>
-                </div>
+                    <div>
+                        <p class="text-center">¿Conoces nuestros productos ?</p>
+                        <div class="form-check text-center d-flex justify-content-center gap-3">
+                            <input class="form-check-input backgroundCamposContacto" type="radio"
+                                name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Si
+                            </label>
+                        </div>
+                        <div class="form-check text-center d-flex justify-content-center gap-3">
+                            <input class="form-check-input backgroundCamposContacto" type="radio"
+                                name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label " for="flexRadioDefault2">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-center my-4">
+                            Elegi tu Pronvicia
+                        </p>
+                        <select class="form-select backgroundCamposContacto anchoBarrasProvincia"
+                            aria-label="Default select example">
+                            <option selected>Pronvicias</option>
+                            <option value="1">Buenos Aires</option>
+                            <option value="2">Cordoba</option>
+                            <option value="3">La Rioja</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 text-center my-3">
+                        <label for="exampleFormControlTextarea1" class="form-label my-3">Escribe aqui tu
+                            comentario</label>
+                        <textarea class="form-control backgroundCamposContacto anchoBarrasInput"
+                            id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="d-flex justify-content-center mb-3 mt-4">
+                        <button type="submit"
+                            class=" btn btn-outline-light  w-25 justify-content-center backgroundCamposContacto text-dark w-100 ">Enviar</button>
+                    </div>
+                </form>
             </div>
         </div>
         <!-- termina Contacto -->
@@ -132,36 +147,45 @@
                 <a href="https://www.instagram.com/" class="bi bi-instagram text-white iconoRed" target="_blank"></a>
             </div>
             <form class="col-sm-12 col-md-12 col-lg-4 d-flex flex-column align-items-center">
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label fontSans text-center text-white">Registrate y
-                        conoce
-                        nuestras
-                        novedades
-                        Correo Electronico</label>
+                <div class="mb-3 text-center">
+                    <p class="text-white py-2 fontSans fs-4">Registrate y
+                        conoce nuestras
+                        novedades</p>
+                    <label for="exampleInputEmail1" class="form-label fontSans text-center text-white">Direccion de
+                        correo electronico
+                    </label>
                     <input type="email" class="form-control text-center" id="exampleInputEmail1"
                         placeholder="peptio@gmail.com" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text text-center text-white">We'll never share your email with
-                        anyone else.
+                    <div id="emailHelp" class="form-text text-center text-white">
                     </div>
                 </div>
-                <button type="submit" class="btn btn-outline-light  w-25">Submit</button>
+                <button type="submit" class="btn btn-outline-light  w-25 mt-3">Enviar</button>
             </form>
             <div class="col-sm-12 col-md-12 col-lg-4 d-flex flex-column align-items-center ">
                 <iframe class="d-none d-xl-block "
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27795.263849430627!2d-66.94734634764785!3d-29.44609478947877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1656112005348!5m2!1ses-419!2sar"
-                    width="400" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
-                <p class="text-white">Direccion : lorem 444 Provincia: lorem Cp:1111</p>
+                <p class="text-white mt-3">Direccion : Castro 444 Provincia: La Rioja Cp:1111</p>
             </div>
         </div>
     </footer>
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <!--script Animaciones  -->
+    <script src="../js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- script boton hamburguesa -->
+    <script>
+        var hamburger = document.querySelector(".hamburger");
+        hamburger.addEventListener("click", function () {
+            hamburger.classList.toggle("is-active");
+        });
+    </script>
 
 </body>
 
