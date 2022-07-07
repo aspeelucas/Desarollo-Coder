@@ -1,0 +1,75 @@
+// Pagina Home
+.backgroundIndex {
+  background-image: url(../imagenes/background/backgroundboddy-min.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  h1 {
+    color: $white;
+    font-family: $fontCourgette;
+  }
+
+  p {
+    color: $white;
+    font-family: $fontSans;
+  }
+}
+
+.bgTextoPrincipal {
+  background-color: rgba(0, 0, 0, 0.438);
+  border-radius: 10px;
+}
+
+.anchoIndex {
+  height: 55rem;
+}
+
+.blanquito {
+  color: $white;
+}
+
+/* Carrousel recomendacion */
+.colorCarru {
+  background-color: rgb(255, 255, 255);
+  height: 19rem;
+}
+
+.colorCarrousel1 {
+  background-color: rgba(51, 51, 50, 0.877);
+}
+
+.flexCenterText {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+
+.alturaItem {
+  height: 100%;
+}
+
+.backGroundOpi {
+  margin-top: 40px;
+  background-color: rgba(255, 255, 255, 0.952);
+
+  h3 {
+    font-family: $fontCourgette;
+    color: $mainColorBlack;
+  }
+}
+
+.margenCarrusel {
+  margin-top: 40px;
+
+  h2 {
+    color: $mainColorBlack;
+    font-family: $fontCourgette;
+  }
+
+  p {
+    color: $mainColorBlack;
+    font-family: $fontSans;
+    font-size: $letraGrande;
+    text-align: center;
+  }
+}

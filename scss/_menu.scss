@@ -1,0 +1,67 @@
+.bordesMenu {
+    border-radius: 20px;
+}
+
+.intensidadTexto {
+    font-weight: 600;
+}
+
+.backgroundMenu {
+    background-image: url(../imagenes/background/menu-min.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.anchoMenu {
+    height: 22rem;
+
+    h1 {
+        font-family: $fontCourgette;
+        font-size: $letraTitulos;
+    }
+}
+
+.margenMenu {
+    margin-top: 70px;
+}
+
+.margenArticulo {
+    margin-bottom: 90px;
+}
+
+.backTituloMenu {
+    width: 100%;
+}
+
+.backgroundCatalogo {
+    background-color: rgb(255, 255, 255);
+
+    h2 {
+        font-family: $fontSans;
+    }
+
+    p {
+        font-family: $fontSans;
+    }
+}
+
+.bgCajitaProdu {
+    background-color: rgb(27, 27, 27);
+    border-radius: 20px;
+}
+
+.categoriaCatalogos {
+    margin-top: 90px;
+    font-family: $fontRubik;
+    font-size: 60px;
+    font-weight: 500;
+    width: fit-content;
+}
+
+.categoriaCatalogos1 {
+    margin-bottom: 80px;
+    font-family: $fontRubik;
+    font-size: 60px;
+    font-weight: 500;
+    width: fit-content;
+}

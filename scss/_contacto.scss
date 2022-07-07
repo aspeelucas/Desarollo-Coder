@@ -1,0 +1,60 @@
+.bgTextoPrincipalContacto {
+  background-color: rgba(0, 0, 0, 0.438);
+  border-radius: 10px;
+  width: 50%;
+}
+
+.backgroundContacto {
+  background-image: url(../imagenes/background/backgcontacto.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.anchoContacto {
+  height: 23rem;
+
+  h1 {
+    font-family: $fontCourgette;
+  }
+}
+
+.altoContacto {
+  min-height: 100vh;
+}
+
+.fondoFormulario {
+  background-color: rgb(255, 255, 255);
+
+  h2 {
+    font-family: $fontRubik;
+    font-size: 45px;
+  }
+
+  p {
+    font-size: $fontRubik;
+    font-size: 25px;
+    font-weight: 600;
+  }
+}
+
+.anchoEntrada {
+  width: fit-content;
+}
+
+.backgroundCamposContacto {
+  background-color: rgb(206, 208, 211);
+}
+
+.intensidadTextoCajaContacto {
+  font-weight: 600;
+  font-family: $fontSans;
+}
+
+.anchoBarrasInput {
+  width: 300px;
+}
+
+.anchoBarrasProvincia {
+  width: 150px;
+}
