@@ -135,3 +135,29 @@
 }
 
 // Fin Boton Hamburguesa
+
+// SASS II
+
+// Extends bakcgrounds
+.backgroudnSeccionGral {
+  background-image: url();
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+// Mixin fonts
+@mixin fuentes($font-family,$font-size,$color){
+  font-family: $font-family;
+  font-size: $font-size;
+  color: $color;
+}
+
+// Maps de colores
+$paleta:(  
+    'turquesa': #53F3CB,
+    'cafe':#362E2B,
+    'beige':#D1C4B1,
+    'negro':rgb(27, 27, 27),
+    'blanco':rgb(255, 255, 255),
+);
+// Fin SASS II

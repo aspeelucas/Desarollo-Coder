@@ -1,7 +1,6 @@
 .backgroundTutoriales {
+  @extend .backgroudnSeccionGral;
   background-image: url(../imagenes/background/backgroundTutorial-min.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
 }
 
@@ -9,8 +8,7 @@
   height: 23rem;
 
   h1 {
-    font-family: $fontCourgette;
-    font-size: $letraTitulos;
+    @include fuentes($fontCourgette, $letraTitulos, $white);
   }
 }
 
@@ -23,9 +21,17 @@
   min-height: 100vh;
 }
 
-.textoTutoriales {
-  text-align: justify;
-  padding-right: 200px;
+.textoTamanoTutoriales {
+  h2 {
+    @include fuentes($fontCourgette, 38px, $mainColorBlack);
+  }
+
+  h3 {
+    @include fuentes($fontCourgette, 38px, $mainColorBlack);
+  }
+  p {
+    font-size: 20px;
+  }
 }
 
 .backGroundTutorialesdos {
@@ -37,16 +43,6 @@
   margin-bottom: 100px;
 
   h3 {
-    font-family: $fontCourgette;
-    font-size: $letraTitulos;
+    @include fuentes($fontCourgette, $letraTitulos, $white);
   }
-}
-
-.intensidadTutoriales {
-  font-weight: 700;
-  font-size: 60px;
-}
-
-.textoTamanoTutoriales {
-  font-size: 36px;
 }

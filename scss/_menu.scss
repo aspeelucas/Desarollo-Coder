@@ -1,67 +1,63 @@
 .bordesMenu {
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
 .intensidadTexto {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .backgroundMenu {
-    background-image: url(../imagenes/background/menu-min.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+  @extend .backgroudnSeccionGral;
+  background-image: url(../imagenes/background/menu-min.jpg);
 }
 
 .anchoMenu {
-    height: 22rem;
+  height: 22rem;
 
-    h1 {
-        font-family: $fontCourgette;
-        font-size: $letraTitulos;
-    }
+  h1 {
+    @include fuentes($fontCourgette, $letraTitulos, $white);
+  }
 }
 
 .margenMenu {
-    margin-top: 70px;
+  margin-top: 70px;
 }
 
 .margenArticulo {
-    margin-bottom: 90px;
+  margin-bottom: 90px;
 }
 
 .backTituloMenu {
-    width: 100%;
+  width: 100%;
 }
 
 .backgroundCatalogo {
-    background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 
-    h2 {
-        font-family: $fontSans;
-    }
+  h2 {
+    font-family: $fontSans;
+  }
 
-    p {
-        font-family: $fontSans;
-    }
+  p {
+    font-family: $fontSans;
+  }
 }
 
 .bgCajitaProdu {
-    background-color: rgb(27, 27, 27);
-    border-radius: 20px;
+  background-color: rgb(27, 27, 27);
+  border-radius: 20px;
 }
 
 .categoriaCatalogos {
-    margin-top: 90px;
-    font-family: $fontRubik;
-    font-size: 60px;
-    font-weight: 500;
-    width: fit-content;
+  margin-top: 90px;
+  font-weight: 500;
+  width: fit-content;
+  @include fuentes($fontRubik,60px,$mainColorBlack)
 }
 
 .categoriaCatalogos1 {
-    margin-bottom: 80px;
-    font-family: $fontRubik;
-    font-size: 60px;
-    font-weight: 500;
-    width: fit-content;
+  margin-bottom: 80px;
+  font-weight: 500;
+  width: fit-content;
+  @include fuentes($fontRubik,60px,$mainColorBlack)
 }

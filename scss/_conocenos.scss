@@ -1,15 +1,14 @@
 .backgroundConocenos {
-  background-image: url(../imagenes/background/backgroundconocenos-min.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  @extend .backgroudnSeccionGral;
+  background-image: url(../imagenes/background/backgroundconocenos-min.jpg); 
 }
 
 .fontCajaSubTituloConocenos {
-  font-family: $fontCourgette;
+  @include fuentes($fontCourgette,40px,$white)
 }
 
 .fontCajaSubConocenos {
-  font-family: $fontSans;
+  @include fuentes($fontSans,23px,$white)
 }
 
 .tamanoImgConocenos {

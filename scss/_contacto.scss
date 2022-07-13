@@ -5,9 +5,8 @@
 }
 
 .backgroundContacto {
+  @extend .backgroudnSeccionGral;
   background-image: url(../imagenes/background/backgcontacto.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
 }
 
@@ -15,7 +14,7 @@
   height: 23rem;
 
   h1 {
-    font-family: $fontCourgette;
+    @include fuentes($fontCourgette, 43px, $white);
   }
 }
 
@@ -27,13 +26,11 @@
   background-color: rgb(255, 255, 255);
 
   h2 {
-    font-family: $fontRubik;
-    font-size: 45px;
+    @include fuentes($fontRubik, 45px, $mainColorBlack);
   }
 
   p {
-    font-size: $fontRubik;
-    font-size: 25px;
+    @include fuentes($fontRubik, 25px, $mainColorBlack);
     font-weight: 600;
   }
 }
