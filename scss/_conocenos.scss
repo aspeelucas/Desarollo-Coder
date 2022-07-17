@@ -1,20 +1,69 @@
+// CONOCENOS
+
 .backgroundConocenos {
   @extend .backgroudnSeccionGral;
-  background-image: url(../imagenes/background/backgroundconocenos-min.jpg); 
+  background-image: url(../imagenes/background/backgroundconocenos-min.jpg);
 }
-
-.fontCajaSubTituloConocenos {
-  @include fuentes($fontCourgette,40px,$white)
-}
-
-.fontCajaSubConocenos {
-  @include fuentes($fontSans,23px,$white)
-}
-
-.tamanoImgConocenos {
+.tamañoQuienesSomos {
   width: 100%;
+  max-width: 500px;
+  height: auto;
 }
 
-.backGroundConocenos {
-  background-color: rgb(31, 23, 12);
+.margenPrimeraRow {
+  margin-top: 80px;
+  h2 {
+    margin-top: 35px;
+    @include fuentes($fontCourgette, 43px, $mainColorBlack);
+    font-weight: 600;
+  }
+  h3 {
+    margin-top: 35px;
+    @include fuentes($fontCourgette, 43px, $mainColorBlack);
+    font-weight: 600;
+  }
+  p {
+    @include fuentes($fontSans, 20px, $mainColorBlack);
+    text-align: justify;
+    font-weight: 700;
+  }
+}
+.backGroundConocenosDos {
+  @extend .backgroudnSeccionGral;
+  background-image: url(../imagenes/conocenos/instalaciones.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  h3 {
+    @include fuentes($fontCourgette, 55px, $white);
+  }
+  p {
+    @include fuentes($fontSans, 19px, $white);
+    text-align: center;
+  }
+}
+.bgTextoPrincipalInstalaciones {
+  @extend .bgTextoPrincipal;
+  background-color: rgba(34, 34, 34, 0.651);
+}
+
+.classReservas {
+  margin-bottom: 100px;
+  h5 {
+    margin-bottom: 40px;
+    @include fuentes($fontPopi, 50px, $mainColorBlack);
+    font-weight: 600;
+  }
+  p {
+    margin-bottom: 50px;
+    @include fuentes($fontSans, 22px, $mainColorBlack);
+    text-align: center;
+    width: 40%;
+  }
+}
+.anchuraBoton {
+  width: fit-content;
 }

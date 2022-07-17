@@ -5,3 +5,9 @@
     width: 200px;
   }
 }
+.dropdown-item {
+  color: $white;
+  &:hover {
+    color: $mainColorBlack;
+  }
+}

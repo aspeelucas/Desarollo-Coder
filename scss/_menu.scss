@@ -1,3 +1,5 @@
+// MENU DE PRODUCTOS
+
 .bordesMenu {
   border-radius: 20px;
 }
@@ -8,7 +10,7 @@
 
 .backgroundMenu {
   @extend .backgroudnSeccionGral;
-  background-image: url(../imagenes/background/menu-min.jpg);
+  background-image: url(../imagenes/background/backmenuproductos.jpg);
 }
 
 .anchoMenu {
@@ -19,45 +21,44 @@
   }
 }
 
-.margenMenu {
-  margin-top: 70px;
-}
-
-.margenArticulo {
-  margin-bottom: 90px;
-}
-
-.backTituloMenu {
-  width: 100%;
-}
-
-.backgroundCatalogo {
-  background-color: rgb(255, 255, 255);
-
-  h2 {
-    font-family: $fontSans;
-  }
-
-  p {
-    font-family: $fontSans;
-  }
-}
-
-.bgCajitaProdu {
-  background-color: rgb(27, 27, 27);
-  border-radius: 20px;
-}
-
 .categoriaCatalogos {
-  margin-top: 90px;
+  margin-top: 180px;
   font-weight: 500;
   width: fit-content;
-  @include fuentes($fontRubik,60px,$mainColorBlack)
+  @include fuentes($fontPopi, 60px, $mainColorBlack);
+  font-weight: 600;
 }
 
-.categoriaCatalogos1 {
-  margin-bottom: 80px;
-  font-weight: 500;
-  width: fit-content;
-  @include fuentes($fontRubik,60px,$mainColorBlack)
+.MargenGeneralCaja1 {
+  margin-top: 180px;
+}
+.MargenGeneralCaja3 {
+  margin-bottom: 180px;
+}
+
+.cajitaProductos {
+  width: 350px;
+  background-color: $cafe;
+  h2 {
+    @include fuentes($fontPopi, 2rem, $white);
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  p {
+    color: $white;
+    font-family: $fontSans;
+    text-align: center;
+  }
+  .precioColor {
+    @include fuentes($fontRobot, $letraGrande, $turquesa);
+    font-weight: 600;
+  }
+}
+.imagenCafe {
+  margin-top: -100px;
+}
+
+.cajitaProductos:hover {
+  transform: scale(1.04);
+  transition: 1s ease;
 }

@@ -1,3 +1,5 @@
+// TUTORIALES
+
 .backgroundTutoriales {
   @extend .backgroudnSeccionGral;
   background-image: url(../imagenes/background/backgroundTutorial-min.jpg);
@@ -43,6 +45,6 @@
   margin-bottom: 100px;
 
   h3 {
-    @include fuentes($fontCourgette, $letraTitulos, $white);
+    @include fuentes($fontCourgette, 50px, $white);
   }
 }

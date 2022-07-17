@@ -1,7 +1,9 @@
+// CONTACTO
+
 .bgTextoPrincipalContacto {
   background-color: rgba(0, 0, 0, 0.438);
   border-radius: 10px;
-  width: 50%;
+  width: fit-content;
 }
 
 .backgroundContacto {
@@ -16,6 +18,9 @@
   h1 {
     @include fuentes($fontCourgette, 43px, $white);
   }
+}
+.backTituloMenu {
+  width: 100%;
 }
 
 .altoContacto {
@@ -54,4 +59,7 @@
 
 .anchoBarrasProvincia {
   width: 150px;
+}
+.form-check-input:checked {
+  background-color: $mainColorBlack;
 }

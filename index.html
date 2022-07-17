@@ -39,12 +39,15 @@
                             Menu
                         </a>
                         <ul class="dropdown-menu bgMarron " aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item text-white " href="./views/menu.html">Latte Grande</a></li>
-                            <li><a class="dropdown-item text-white" href="./views/menu.html">Desayuno Express</a></li>
-                            <li><a class="dropdown-item text-white" href="./views/menu.html">Desayuno Americano</a></li>
-                            <li><a class="dropdown-item text-white" href="./views/menu.html">Pancake</a></li>
-                            <li><a class="dropdown-item text-white" href="./views/menu.html">Pizza a la Piedra</a></li>
-                            <li><a class="dropdown-item text-white" href="./views/menu.html">Sandwich</a></li>
+                            <li><a class="dropdown-item  " href="./views/menu.html">Cafe Indivdual</a></li>
+                            <li><a class="dropdown-item " href="./views/menu.html">Cafe Box</a></li>
+                            <li><a class="dropdown-item " href="./views/menu.html">Combo Parejas</a></li>
+                            <li><a class="dropdown-item " href="./views/menu.html">CupCakes</a></li>
+                            <li><a class="dropdown-item " href="./views/menu.html">Selva Negra</a></li>
+                            <li><a class="dropdown-item " href="./views/menu.html">Pancakes</a></li>
+                            <li><a class="dropdown-item " href="./views/menu.html">Sandwich Esp</a></li>
+                            <li><a class="dropdown-item " href="./views/menu.html">Pizzas</a></li>
+                            <li><a class="dropdown-item " href="./views/menu.html">Panes</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -66,29 +69,25 @@
         <div class="row backgroudnSeccionGral anchoIndex justify-content-center">
             <div class="col-sm-12 col-md-6  d-flex flex-column justify-content-center wow fadeInDown "
                 data-wow-delay="0.3s">
-                <div class="bgTextoPrincipal p-3 ">
+                <div class="bgTextoPrincipal p-3">
                     <h1 class=" text-center">Disfruta del sabor de un buen Cafe</h1>
-                    <p class=" text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Ipsam optio obcaecati
-                        at vero neque eveniet aut corrupti incidunt numquam, minima a id ea perferendis tempore ipsa
-                        unde
-                        itaque deserunt consequatur!</p>
+                    <p class=" text-center">En nuestras tiendas te esperan nuestros baristas capacitados para ofrecerte
+                        una bebida muy especial. El ambiente cálido y los detalles de nuestros productos elaborados
+                        artesanalmente hacen que la experiencia sea única e inigualable.</p>
                 </div>
             </div>
         </div>
         <!-- termina imagen fondo -->
         <!-- inicia carrousel RECOMENDADOS -->
-        <div class="row bg-white margenCarrusel">
-            <div class="col-sm-12 col-md-6 col-xl-6  d-flex justify-content-center flex-column align-items-center gap-3 wow fadeInLeft "
-                data-wow-delay="0.8s">
+        <div class="row bg-white margenCarrusel wow fadeInLeft justify-content-center " data-wow-delay="1.2s">
+            <div
+                class="col-sm-12 col-md-6 col-xl-5  d-flex justify-content-center flex-column align-items-center gap-3 wow ">
                 <h2 class="text-center intensidadTextGral"> Nuestros Destacados</h2>
-                <p class=" LetraGrande textoRecomendaciones w-75">Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit.
-                    Perspiciatis debitis alias culpa nobis
-                    fugiat voluptatum neque magnam eaque corrupti cumque! Saepe omnis numquam ratione amet cupiditate
+                <p class="w-75  d-none  d-xxl-block">Te mostramos algunos de nuestros productos mas destacados y pedidos
+                    por nuestros clientes.
                 </p>
             </div>
-            <div id="carouselExampleIndicators" class="carousel slide col-sm-12 col-md-6 col-xl-6 "
+            <div id="carouselExampleIndicators" class="carousel carousel-dark slide  col-sm-12 col-md-6 col-xl-5 "
                 data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -99,17 +98,17 @@
                         aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner alturaItem bordesMenu">
-                    <div class="carousel-item active ">
-                        <a href="./views/menu.html"><img src="./imagenes/productos/cafegrande-min.jpg"
-                                class="d-block w-100   " alt="Cafe servido en taza grande"></a>
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <a href="./views/menu.html"><img src="./imagenes/productos/boxcatalogouno.png"
+                                class="d-block w-100   " alt="Cafe mas Box"></a>
                     </div>
-                    <div class="carousel-item">
-                        <a href="./views/menu.html"><img src="./imagenes/productos/desayunoamericano-min.jpg"
-                                class="d-block w-100  " alt="Desayuno al estilo americano"></a>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <a href="./views/menu.html"><img src="./imagenes/productos/boxcatalogodos.png"
+                                class="d-block w-100  " alt="Cupcakes"></a>
                     </div>
-                    <div class="carousel-item">
-                        <a href="./views/menu.html"><img src="./imagenes/productos/cafeconmasita-min.jpg"
-                                class="d-block w-100  " alt="Taza de cafe grande acompañado con una masita dulce"></a>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <a href="./views/menu.html"><img src="./imagenes/productos/boxcatalogotres.png"
+                                class="d-block w-100  " alt="Como parejas 2 cafes"></a>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -124,12 +123,44 @@
                 </button>
             </div>
         </div>
+        <!-- Barra de cafe Inicio -->
+        <div class="row bg-white margenCarrusel2 d-none d-lg-flex  wow fadeInRight justify-content-center "
+            data-wow-delay="1.3s">
+            <div class="col-sm-12 col-md-12 col-xl-12 d-flex justify-content-center align-items-center">
+                <div class="cafeAnimation col-sm-12 col-md-6 col-xl-5 d-flex">
+                    <div class="coffee-header">
+                        <div class="coffee-header__buttons coffee-header__button-one"></div>
+                        <div class="coffee-header__buttons coffee-header__button-two"></div>
+                        <div class="coffee-header__display"></div>
+                        <div class="coffee-header__details"></div>
+                    </div>
+                    <div class="coffee-medium">
+                        <div class="coffe-medium__exit"></div>
+                        <div class="coffee-medium__arm"></div>
+                        <div class="coffee-medium__liquid"></div>
+                        <div class="coffee-medium__smoke coffee-medium__smoke-one"></div>
+                        <div class="coffee-medium__smoke coffee-medium__smoke-two"></div>
+                        <div class="coffee-medium__smoke coffee-medium__smoke-three"></div>
+                        <div class="coffee-medium__smoke coffee-medium__smoke-for"></div>
+                        <div class="coffee-medium__cup"></div>
+                    </div>
+                    <div class="coffee-footer"></div>
+                </div>
+            </div>
+            <!--Barra de Cafe  Fin-->
+            <div
+                class="col-sm-12 col-md-12 col-xl-12 barraCafe d-flex justify-content-center flex-column align-items-center gap-3 wow ">
+                <img src="./imagenes/Logos/epale200trans-whiite.png" class="w-25" alt="Logo imagen epale">
+                <p class="w-75  d-xxl-block">Desde 1995 elaborando el mejor Cafe
+                </p>
+            </div>
+        </div>
         <!-- FINALIZA RECOMENDADOS-->
         <!-- INICIA PUNTUACION -->
         <div class="row justify-content-center  backGroundOpi mt-5 pt-5">
-            <h3 class="intensidadMedia  text-center  p-2 wow fadeInRight" data-wow-delay="0.s">Reseñas</h3>
+            <h3 class="intensidadMedia  text-center  p-2 wow fadeInLeft" data-wow-delay="1.4s">Reseñas</h3>
         </div>
-        <div class="row bg-white">
+        <div class="row bg-white wow fadeInLeft" data-wow-delay="1-4s">
             <div id="carouselExampleControls" class="carousel slide carousel-dark col-12 fontSans text-white "
                 data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -145,10 +176,9 @@
                                         </i>
                                     </span>
                                 </h4>
-                                <p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda,
-                                    perferendis.
-                                    Enim deleniti nesciunt ducimus? Ipsa quo alias quam ullam nostrum porro adipisci
-                                    quod quidem nam facere, impedit harum sapiente obcaecati?</p>
+                                <p class="fs-5">Increible cafe y comida !! Les re comiendo el combo para dos y sus
+                                    pasteles. Lleve a mi pareja por nuestro aniversario y la atencion fue un lujo , dejo
+                                    5 estrellas.</p>
                             </div>
                         </div>
                     </div>
@@ -165,10 +195,9 @@
                                         <i class="bi bi-star-half"></i>
                                     </span>
                                 </h5>
-                                <p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda,
-                                    perferendis.
-                                    Enim deleniti nesciunt ducimus? Ipsa quo alias quam ullam nostrum porro adipisci
-                                    quod quidem nam facere, impedit harum sapiente obcaecati?
+                                <p class="fs-5">Fuimos con unas amigas , esa tarde habia un Dj en vivo. Pedimos unos
+                                    Cafes grandes con Cupcakes, una verdadera delicia . Los super recomiendo ,se
+                                    convirtio en mi cafeteria preferida.
                                 </p>
                             </div>
                         </div>
@@ -186,10 +215,9 @@
                                         <i class="bi bi-star"></i>
                                     </span>
                                 </h6>
-                                <p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda,
-                                    perferendis.
-                                    Enim deleniti nesciunt ducimus? Ipsa quo alias quam ullam nostrum porro adipisci
-                                    quod quidem nam facere, impedit harum sapiente obcaecati?</p>
+                                <p class="fs-5">El cafe es bueno , pedimos una pizza y estaba regular un poco cruda,
+                                    podria mejorar mas. Mi critica mas grande es al mozo que nos toco, fue bastante
+                                    desatento y se demoro mucho en atendernos.</p>
                             </div>
                         </div>
                     </div>
@@ -210,7 +238,8 @@
     </main>
     <footer class="container-fluid bgFooter py-4 pruebita123">
         <div class="row align-items-center">
-            <div class="col-sm-12 col-md-12 col-lg-4 fs-2 d-flex justify-content-center flex-column  align-items-center altoRefuerzo gap-2"> 
+            <div
+                class="col-sm-12 col-md-12 col-lg-4 fs-2 d-flex justify-content-center flex-column  align-items-center altoRefuerzo gap-2">
                 <div>
                     <ul class="listRefuerzo d-flex align-items-center  gap-2 flex-wrap flex-column  ">
                         <li><a href="./views/menu.html">Menu</a></li>

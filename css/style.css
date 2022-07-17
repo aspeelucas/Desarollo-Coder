@@ -1,19 +1,294 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Roboto+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Courgette&family=Rubik:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 .bgMarron {
   background-color: #1b1b1b; }
   .bgMarron img {
     width: 200px; }
 
+.dropdown-item {
+  color: white; }
+  .dropdown-item:hover {
+    color: #1b1b1b; }
+
+.bgFooter {
+  background-color: #1b1b1b; }
+  .bgFooter a {
+    color: white;
+    font-size: 45px; }
+  .bgFooter p {
+    color: white;
+    font-family: "Open Sans", sans-serif; }
+  .bgFooter label {
+    color: white;
+    font-family: "Open Sans", sans-serif; }
+
+.listRefuerzo {
+  width: 300px; }
+  .listRefuerzo li {
+    list-style: none; }
+  .listRefuerzo a {
+    text-decoration: none;
+    font-size: 25px;
+    opacity: 0.7; }
+  .listRefuerzo a:hover {
+    opacity: 1; }
+
+.altoRefuerzo {
+  height: 320px; }
+
 .sombraTexto {
   text-shadow: 0px 3px #000; }
 
-.intensidadTextGral {
+.intensidadTextGral, .margenCarrusel p, .margenCarrusel2 p {
   font-weight: 700; }
 
 .intensidadMedia {
   font-weight: 600; }
+
+.cafeAnimation {
+  width: 300px;
+  height: 280px;
+  position: relative; }
+
+.coffee-header {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ddcfcc;
+  border-radius: 10px; }
+
+.coffee-header__buttons {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 25px;
+  background-color: #282323;
+  border-radius: 50%; }
+
+.coffee-header__buttons::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  bottom: -8px;
+  left: calc(50% - 4px);
+  background-color: #615e5e; }
+
+.coffee-header__button-one {
+  left: 15px; }
+
+.coffee-header__button-two {
+  left: 50px; }
+
+.coffee-header__display {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+  border-radius: 50%;
+  background-color: #9acfc5;
+  border: 5px solid #43beae;
+  box-sizing: border-box; }
+
+.coffee-header__details {
+  width: 8px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #9b9091;
+  box-shadow: -12px 0 0 #9b9091, -24px 0 0 #9b9091; }
+
+.coffee-medium {
+  width: 90%;
+  height: 160px;
+  position: absolute;
+  top: 80px;
+  left: calc(50% - 45%);
+  background-color: #bcb0af; }
+
+.coffee-medium:before {
+  content: "";
+  width: 90%;
+  height: 100px;
+  background-color: #776f6e;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 45%);
+  border-radius: 20px 20px 0 0; }
+
+.coffe-medium__exit {
+  width: 60px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 30px);
+  background-color: #231f20; }
+
+.coffe-medium__exit::before {
+  content: "";
+  width: 50px;
+  height: 20px;
+  border-radius: 0 0 50% 50%;
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 25px);
+  background-color: #231f20; }
+
+.coffe-medium__exit::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: -30px;
+  left: calc(50% - 5px);
+  background-color: #231f20; }
+
+.coffee-medium__arm {
+  width: 70px;
+  height: 20px;
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  background-color: #231f20; }
+
+.coffee-medium__arm::before {
+  content: "";
+  width: 15px;
+  height: 5px;
+  position: absolute;
+  top: 7px;
+  left: -15px;
+  background-color: #9e9495; }
+
+.coffee-medium__cup {
+  width: 80px;
+  height: 47px;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 40px);
+  background-color: #fff;
+  border-radius: 0 0 70px 70px / 0 0 110px 110px; }
+
+.coffee-medium__cup::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 6px;
+  right: -13px;
+  border: 5px solid #fff;
+  border-radius: 50%; }
+
+@keyframes liquid {
+  0% {
+    height: 0px;
+    opacity: 1; }
+  5% {
+    height: 0px;
+    opacity: 1; }
+  20% {
+    height: 62px;
+    opacity: 1; }
+  95% {
+    height: 62px;
+    opacity: 1; }
+  100% {
+    height: 62px;
+    opacity: 0; } }
+
+.coffee-medium__liquid {
+  width: 6px;
+  height: 63px;
+  opacity: 0;
+  position: absolute;
+  top: 50px;
+  left: calc(50% - 3px);
+  background-color: #74372b;
+  animation: liquid 4s 4s linear infinite; }
+
+.coffee-medium__smoke {
+  width: 8px;
+  height: 20px;
+  position: absolute;
+  border-radius: 5px;
+  background-color: #b3aeae; }
+
+@keyframes smokeOne {
+  0% {
+    bottom: 20px;
+    opacity: 0; }
+  40% {
+    bottom: 50px;
+    opacity: 0.5; }
+  80% {
+    bottom: 80px;
+    opacity: 0.3; }
+  100% {
+    bottom: 80px;
+    opacity: 0; } }
+
+@keyframes smokeTwo {
+  0% {
+    bottom: 40px;
+    opacity: 0; }
+  40% {
+    bottom: 70px;
+    opacity: 0.5; }
+  80% {
+    bottom: 80px;
+    opacity: 0.3; }
+  100% {
+    bottom: 80px;
+    opacity: 0; } }
+
+.coffee-medium__smoke-one {
+  opacity: 0;
+  bottom: 50px;
+  left: 102px;
+  animation: smokeOne 3s 4s linear infinite; }
+
+.coffee-medium__smoke-two {
+  opacity: 0;
+  bottom: 70px;
+  left: 118px;
+  animation: smokeTwo 3s 5s linear infinite; }
+
+.coffee-medium__smoke-three {
+  opacity: 0;
+  bottom: 65px;
+  right: 118px;
+  animation: smokeTwo 3s 6s linear infinite; }
+
+.coffee-medium__smoke-for {
+  opacity: 0;
+  bottom: 50px;
+  right: 102px;
+  animation: smokeOne 3s 5s linear infinite; }
+
+.coffee-footer {
+  width: 95%;
+  height: 15px;
+  position: absolute;
+  bottom: 25px;
+  left: calc(50% - 47.5%);
+  background-color: #41bdad;
+  border-radius: 10px; }
+
+.coffee-footer::after {
+  content: "";
+  width: 106%;
+  height: 26px;
+  position: absolute;
+  bottom: -25px;
+  left: -8px;
+  background-color: #000; }
 
 .iconoRed:hover {
   transform: scale(1.2);
@@ -113,54 +388,28 @@
   transform: rotate(-90deg);
   transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1); }
 
-.backgroudnSeccionGral, .backgroundMenu, .backgroundTutoriales, .backgroundConocenos, .backgroundContacto {
+.backgroudnSeccionGral, .backgroundMenu, .backgroundTutoriales, .backgroundConocenos, .backGroundConocenosDos, .backgroundContacto {
   background-image: url();
   background-size: cover;
   background-repeat: no-repeat; }
 
-.bgFooter {
-  background-color: #1b1b1b; }
-  .bgFooter a {
-    color: white;
-    font-size: 45px; }
-  .bgFooter p {
-    color: white;
-    font-family: "Open Sans", sans-serif; }
-  .bgFooter label {
-    color: white;
-    font-family: "Open Sans", sans-serif; }
-
-.listRefuerzo {
-  width: 300px; }
-  .listRefuerzo li {
-    list-style: none; }
-  .listRefuerzo a {
-    text-decoration: none;
-    font-size: 25px;
-    opacity: 0.7; }
-  .listRefuerzo a:hover {
-    opacity: 1; }
-
-.altoRefuerzo {
-  height: 320px; }
-
-.backgroudnSeccionGral, .backgroundMenu, .backgroundTutoriales, .backgroundConocenos, .backgroundContacto {
+.backgroudnSeccionGral, .backgroundMenu, .backgroundTutoriales, .backgroundConocenos, .backGroundConocenosDos, .backgroundContacto {
   background-image: url(../imagenes/background/backgroundboddy-min.jpg); }
-  .backgroudnSeccionGral h1, .backgroundMenu h1, .backgroundTutoriales h1, .backgroundConocenos h1, .backgroundContacto h1 {
+  .backgroudnSeccionGral h1, .backgroundMenu h1, .backgroundTutoriales h1, .backgroundConocenos h1, .backGroundConocenosDos h1, .backgroundContacto h1 {
     font-family: "Courgette", cursive;
-    font-size: 43px;
+    font-size: 60px;
     color: white; }
-  .backgroudnSeccionGral p, .backgroundMenu p, .backgroundTutoriales p, .backgroundConocenos p, .backgroundContacto p {
+  .backgroudnSeccionGral p, .backgroundMenu p, .backgroundTutoriales p, .backgroundConocenos p, .backGroundConocenosDos p, .backgroundContacto p {
     font-family: "Open Sans", sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     color: white; }
 
-.bgTextoPrincipal {
+.bgTextoPrincipal, .bgTextoPrincipalInstalaciones {
   background-color: rgba(0, 0, 0, 0.438);
   border-radius: 10px; }
 
 .anchoIndex {
-  height: 55rem; }
+  height: 64rem; }
 
 .blanquito {
   color: white; }
@@ -193,13 +442,31 @@
   margin-top: 40px; }
   .margenCarrusel h2 {
     font-family: "Courgette", cursive;
-    font-size: 45px;
+    font-size: 60px;
     color: #1b1b1b; }
   .margenCarrusel p {
     text-align: center;
     font-family: "Open Sans", sans-serif;
-    font-size: 22px;
+    font-size: 30px;
     color: #1b1b1b; }
+
+.margenCarrusel2 {
+  margin-top: 200px; }
+  .margenCarrusel2 h2 {
+    font-family: "Courgette", cursive;
+    font-size: 45px;
+    color: #53F3CB; }
+  .margenCarrusel2 p {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    color: white; }
+
+.barraCafe {
+  width: 900px;
+  height: 650px;
+  background-color: #362E2B;
+  border-radius: 20px; }
 
 .bordesMenu {
   border-radius: 20px; }
@@ -208,50 +475,55 @@
   font-weight: 600; }
 
 .backgroundMenu {
-  background-image: url(../imagenes/background/menu-min.jpg); }
+  background-image: url(../imagenes/background/backmenuproductos.jpg); }
 
 .anchoMenu {
   height: 22rem; }
   .anchoMenu h1 {
     font-family: "Courgette", cursive;
-    font-size: 50px;
+    font-size: 70px;
     color: white; }
 
-.margenMenu {
-  margin-top: 70px; }
-
-.margenArticulo {
-  margin-bottom: 90px; }
-
-.backTituloMenu {
-  width: 100%; }
-
-.backgroundCatalogo {
-  background-color: white; }
-  .backgroundCatalogo h2 {
-    font-family: "Open Sans", sans-serif; }
-  .backgroundCatalogo p {
-    font-family: "Open Sans", sans-serif; }
-
-.bgCajitaProdu {
-  background-color: #1b1b1b;
-  border-radius: 20px; }
-
 .categoriaCatalogos {
-  margin-top: 90px;
+  margin-top: 180px;
   font-weight: 500;
   width: fit-content;
-  font-family: "Rubik", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 60px;
-  color: #1b1b1b; }
+  color: #1b1b1b;
+  font-weight: 600; }
 
-.categoriaCatalogos1 {
-  margin-bottom: 80px;
-  font-weight: 500;
-  width: fit-content;
-  font-family: "Rubik", sans-serif;
-  font-size: 60px;
-  color: #1b1b1b; }
+.MargenGeneralCaja1 {
+  margin-top: 180px; }
+
+.MargenGeneralCaja3 {
+  margin-bottom: 180px; }
+
+.cajitaProductos {
+  width: 350px;
+  background-color: #362E2B; }
+  .cajitaProductos h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase; }
+  .cajitaProductos p {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    text-align: center; }
+  .cajitaProductos .precioColor {
+    font-family: "Roboto Mono", monospace;
+    font-size: 22px;
+    color: #53F3CB;
+    font-weight: 600; }
+
+.imagenCafe {
+  margin-top: -100px; }
+
+.cajitaProductos:hover {
+  transform: scale(1.04);
+  transition: 1s ease; }
 
 .backgroundTutoriales {
   background-image: url(../imagenes/background/backgroundTutorial-min.jpg);
@@ -261,7 +533,7 @@
   height: 23rem; }
   .anchoTutoriales h1 {
     font-family: "Courgette", cursive;
-    font-size: 50px;
+    font-size: 70px;
     color: white; }
 
 .anchoMenuTutoriales {
@@ -299,26 +571,75 @@
 .backgroundConocenos {
   background-image: url(../imagenes/background/backgroundconocenos-min.jpg); }
 
-.fontCajaSubTituloConocenos {
-  font-family: "Courgette", cursive;
-  font-size: 40px;
-  color: white; }
+.tamañoQuienesSomos {
+  width: 100%;
+  max-width: 500px;
+  height: auto; }
 
-.fontCajaSubConocenos {
-  font-family: "Open Sans", sans-serif;
-  font-size: 23px;
-  color: white; }
+.margenPrimeraRow {
+  margin-top: 80px; }
+  .margenPrimeraRow h2 {
+    margin-top: 35px;
+    font-family: "Courgette", cursive;
+    font-size: 43px;
+    color: #1b1b1b;
+    font-weight: 600; }
+  .margenPrimeraRow h3 {
+    margin-top: 35px;
+    font-family: "Courgette", cursive;
+    font-size: 43px;
+    color: #1b1b1b;
+    font-weight: 600; }
+  .margenPrimeraRow p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    color: #1b1b1b;
+    text-align: justify;
+    font-weight: 700; }
 
-.tamanoImgConocenos {
-  width: 100%; }
+.backGroundConocenosDos {
+  background-image: url(../imagenes/conocenos/instalaciones.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  margin-top: 100px;
+  margin-bottom: 100px; }
+  .backGroundConocenosDos h3 {
+    font-family: "Courgette", cursive;
+    font-size: 55px;
+    color: white; }
+  .backGroundConocenosDos p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 19px;
+    color: white;
+    text-align: center; }
 
-.backGroundConocenos {
-  background-color: #1f170c; }
+.bgTextoPrincipalInstalaciones {
+  background-color: rgba(34, 34, 34, 0.651); }
+
+.classReservas {
+  margin-bottom: 100px; }
+  .classReservas h5 {
+    margin-bottom: 40px;
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    color: #1b1b1b;
+    font-weight: 600; }
+  .classReservas p {
+    margin-bottom: 50px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+    color: #1b1b1b;
+    text-align: center;
+    width: 40%; }
+
+.anchuraBoton {
+  width: fit-content; }
 
 .bgTextoPrincipalContacto {
   background-color: rgba(0, 0, 0, 0.438);
   border-radius: 10px;
-  width: 50%; }
+  width: fit-content; }
 
 .backgroundContacto {
   background-image: url(../imagenes/background/backgcontacto.jpg);
@@ -330,6 +651,9 @@
     font-family: "Courgette", cursive;
     font-size: 43px;
     color: white; }
+
+.backTituloMenu {
+  width: 100%; }
 
 .altoContacto {
   min-height: 100vh; }
@@ -361,3 +685,6 @@
 
 .anchoBarrasProvincia {
   width: 150px; }
+
+.form-check-input:checked {
+  background-color: #1b1b1b; }
